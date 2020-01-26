@@ -1,0 +1,19 @@
+<h1>Movie List</h1>
+<table *ngIf="movies" width="80%">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Genre</td>
+            <td>Details</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of movies">
+            <td>{{m.id}}</td>
+            <td>{{m.title}}</td>
+            <td>{{m.genre}}</td>
+            <td><a routerLink="{{m.id}}">Details</a></td>
+        </tr>
+    </tbody>
+</table>

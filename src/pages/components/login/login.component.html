@@ -1,0 +1,17 @@
+<h1>Login</h1>
+<form [formGroup]="form">
+    <div *ngIf="form?.errors?.login">
+        Invalid user or password
+    </div>
+    <div>
+        <label for="txtUser">User Name</label>
+        <input type="text" [formControl]="cUserName" #txtUser />
+    </div>
+    <div>
+        <label for="txtPassword">Password</label>
+        <input type="password" [formControl]="cPassword" #txtPassword />
+    </div>
+    <div>
+        <input type="submit" value="Submit" [disabled]="form?.invalid" (click)="submit()" />
+    </div>
+</form>

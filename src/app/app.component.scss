@@ -1,0 +1,43 @@
+aside {
+  float: left;
+  width: 150px;
+
+  ul {
+    padding: 0;
+    margin: 15px 0 0 0;
+    list-style: none;
+
+    li {
+      display: block;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      text-decoration: unset;
+
+      color: unset;
+      display: block;
+      padding: 5px;
+      &:hover {
+        background-color: lightseagreen;
+        color: white;
+      }
+    }
+
+    a.active {
+      text-decoration: unset;
+      background-color: lightskyblue;
+      color: black;
+      color: unset;
+      display: block;
+    }
+  }
+}
+
+section.route-content {
+  margin-left: 150px;
+  margin-top: 15px;
+}
